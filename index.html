@@ -18,33 +18,43 @@
     />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Ghost Carousel</title>
   </head>
 
   <body
-    class="bg-gradient-to-r from-[#f15e22] to-[#ffc63f] pt-40 lg:pt-40 md:pt-20"
+    class="bg-gradient-to-r from-[#f15e22] to-[#ffc63f] pt-40 font-['Inter'] text-white"
   >
     <div
-      class="flex flex-col lg:flex-row items-center justify-center gap-16 px-6 md:px-16 xl:px-24 py-24 text-white lg:ml-10 md:ml-0 sm:ml-0"
+      class="flex flex-col lg:flex-row items-center justify-center gap-16 px-6 md:px-16 xl:px-24 py-24 text-white"
     >
       <!-- Left: Arrows, Headline, Text, CTA -->
       <div
-        class="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 max-w-md w-full"
+        class="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 max-w-[560px] w-full"
       >
         <div class="flex space-x-5">
           <button
-            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full p-3 text-[25px] w-8 h-8 flex items-center justify-center"
+            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full w-[34px] h-[34px] text-[20px] flex items-center justify-center"
           >
             ←
           </button>
           <button
-            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full p-3 text-[25px] w-8 h-8 flex items-center justify-center"
+            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full w-[34px] h-[34px] text-[20px] flex items-center justify-center"
           >
             →
           </button>
         </div>
-        <h1 class="text-4xl lg:text-[40px] font-semibold pt-6 tracking-wide">
+
+        <h1
+          class="text-[48px] font-bold tracking-[-0.02em] leading-[56px] pt-6"
+        >
           The Roberts Family’s Story
         </h1>
         <p class="text-md leading-[1.55] pb-4 pt-2 tracking-tight">
@@ -64,27 +74,27 @@
       <div class="relative w-full max-w-3xl">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <!-- Slide -->
             <div class="swiper-slide">
               <img
-                src="assets/robertsFamily.png"
-                class="w-full h-auto max-h-[450px] object-cover rounded lg:max-h-[450px] md:max-h-[390px] sm:max-h-[350px]"
+                src="./assets/robertsFamily.png"
+                class="w-full h-auto max-h-[450px] object-cover rounded"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="assets/robertsFamily.png"
-                class="w-full h-auto max-h-[400px] object-cover rounded"
+                src="./assets/robertsFamily.png"
+                class="w-full h-auto max-h-[450px] object-cover rounded"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="assets/robertsFamily.png"
+                src="./assets/robertsFamily.png"
                 class="w-full h-auto max-h-[450px] object-cover rounded"
               />
             </div>
           </div>
         </div>
+
         <div
           class="swiper-pagination absolute transform lg:-translate-x-[355px] z-10 lg:translate-y-[55px] rounded-full md:translate-x-[15px] md:translate-y-[65px] sm:translate-y-[10px] sm:translate-x-[12px] space-x-3"
         ></div>

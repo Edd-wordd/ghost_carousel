@@ -6,6 +6,9 @@ module.exports = {
         brandOrange: "#F15A24",
         brandYellow: "#FBB040",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
