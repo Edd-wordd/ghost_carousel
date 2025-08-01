@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Ghost Carousel</title>
+  </head>
+
+  <body
+    class="bg-gradient-to-r from-[#f15e22] to-[#ffc63f] pt-40 lg:pt-40 md:pt-20"
+  >
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center gap-16 px-6 md:px-16 xl:px-24 py-24 text-white lg:ml-10 md:ml-0 sm:ml-0"
+    >
+      <!-- Left: Arrows, Headline, Text, CTA -->
+      <div
+        class="flex flex-col items-center lg:items-start text-center lg:text-left space-y-4 max-w-md w-full"
+      >
+        <div class="flex space-x-5">
+          <button
+            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full p-3 text-[25px] w-8 h-8 flex items-center justify-center"
+          >
+            ←
+          </button>
+          <button
+            class="bg-[#262861] hover:bg-blue-700 text-white rounded-full p-3 text-[25px] w-8 h-8 flex items-center justify-center"
+          >
+            →
+          </button>
+        </div>
+        <h1 class="text-4xl lg:text-[40px] font-semibold pt-6 tracking-wide">
+          The Roberts Family’s Story
+        </h1>
+        <p class="text-md leading-[1.55] pb-4 pt-2 tracking-tight">
+          The circumstances that might lead to homelessness can include loss of
+          income or transportation, a falling out with loved ones, or an abrupt
+          economic downturn. For Brandon and Jennifer, it was all of these
+          things.
+        </p>
+        <button
+          class="bg-yellow-400 text-black px-5 py-2 rounded-full tracking-[1.75px] text-md hover:scale-105 transition w-[265px]"
+        >
+          More Client Stories →
+        </button>
+      </div>
+
+      <!-- Right: Swiper and Pagination -->
+      <div class="relative w-full max-w-3xl">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide -->
+            <div class="swiper-slide">
+              <img
+                src="/assets/robertsFamily.png"
+                class="w-full h-auto max-h-[450px] object-cover rounded lg:max-h-[450px] md:max-h-[390px] sm:max-h-[350px]"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/robertsFamily.png"
+                class="w-full h-auto max-h-[400px] object-cover rounded"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/assets/robertsFamily.png"
+                class="w-full h-auto max-h-[450px] object-cover rounded"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="swiper-pagination absolute transform lg:-translate-x-[355px] z-10 lg:translate-y-[55px] rounded-full md:translate-x-[15px] md:translate-y-[65px] sm:translate-y-[10px] sm:translate-x-[12px] space-x-3"
+        ></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
